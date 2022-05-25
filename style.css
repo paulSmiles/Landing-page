@@ -1,52 +1,178 @@
-.header {
-    overflow: hidden;
-    background-color: #1f2937;
-    padding: 20px 10px;
+body,
+.top,
+.second,
+.third,
+.image-subtext,
+.fourth-text {
+    display :flex;
+    flex-direction: column;
 }
-/*style the header link */
-.header a{
-    float: left;
-    color: #E5E7EB;
+
+.header,
+.first
+.images-second,
+.fourth,
+.links{
+    display: flex;
+}
+
+.second-header{
+    text-align:center;
+}
+
+.image-subtext p{
+    width:180px
     text-align: center;
-    padding: 12px;
+}
+
+.images-second{
+    margin-left: auto;
+    margin-right: auto;
+    row-gap: 20px;
+}
+
+.image-subtext img{
+    height:200px;
+    border: radius 10px;
+    border:solid blue 2px;
+    width: 200px
+}
+
+.links{
+    gap: 15px;
+    margin-top: 20px;
+}
+
+body{
+    margin:0px;
+}
+
+.top,
+.footer{
+    background-color: #1f2937;
+}
+
+.placeholder{
+    text-align: left;
+    color:#F9FAF8;
+    width:500px;
+    height:200px;
+    background-color: gray;
+
+}
+
+.placeholder p{
+    margin:90px 0 0 0;
+}
+
+.links a{
     text-decoration: none;
     font-size: 18px;
-    line-height: 25px;
-    border-radius: 4px;
+    color: #E5E7EB;
 }
-/* Style the logo link (notice that we set the same value of line-height 
-and font-size to prevent the header to increase when the font gets bigger */
-.header a.logo{
+
+.first-container{
+    padding-bottom: 100px;
+    width:470px;
+}
+
+.header{
+    gap: 450px;
+}
+
+.first{
+    gap:100px;
+    align-items: center;
+}
+
+.top{
+    align-items: center;
+}
+
+.first-header{
+    font-size: 48px;
+    font-weight: extra-bold;
+    color: #f9faf8;    
+}
+
+.first-header-subtext{
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.logo{
     font-size: 24px;
-    font-weight: bold;
-    color: #f9faf8;
-}
-/* change the backgroung color on mouse -over*/
-.header a:hover {
-    background-color: #ddd;
-    color: black;
-}
-/* style the active/current link*/
-.header a.active{
-    background-color: dodgerblue;
-    color: white;
-}
-/* float the link section to the right */
-.header-right {
-    float: right;
-
+    color:#F9FAF8
 }
 
-/* Add media queries for responsiveness 
-- when the screen is 500px wide or less, 
-stack the links on top of each other */ 
-@media screen and (max-width:500px) {
-    .header a {
-        float: none;
-        display: block;
-        text-align: left;
-    }
-    .header-right{
-        float: none;
-    }
+.first-button{
+    background-color:#3882F6;
+    border-color:#3882F6;
+    border-radius: 10px;
+    color:#F9FAF8;
+    padding:0;
+    width:100px;
+    height:30px;
+}
+
+.second-header{
+    font-size: 36px;
+    font-weight: 900;
+    color: #1f2937;
+}
+
+.third{
+    background-color: #E5E7EB;
+    justify-content: center;
+}
+
+.quote{
+    margin-top: 200px;
+    margin-bottom: auto;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 400;
+    color: #1f2937;
+}
+
+.quoter{
+    flex-basis: 200px;
+}
+
+.fourth{
+    background-color: #3882F6;
+    color: #F9FAF8;
+    border-radius: 5px;
+}
+
+.third{
+    text-align: center;
+}
+
+.quoter{
+    padding-left: 150px;
+}
+
+.fourth-header{
+    font-weight: 900;
+    font-size: 18px;
+    margin: 40px 0 0;
+}
+
+.fourth{
+    margin: 80px 150px 80px 150px;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+    height: 140px;
+    width:1000px
+}
+
+.fourth-button{
+    align-self: center;
+    padding:5px 25px 5px 25px;
+    color:#F9FAF8
+    background-color:#3882F6;
+    border-radius: 10px;
+    border-color: #f9faf8
 }
